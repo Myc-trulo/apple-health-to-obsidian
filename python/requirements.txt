@@ -1,0 +1,13 @@
+# Health to Obsidian - Python Dependencies
+
+# Core - keine externen Dependencies nötig!
+# Alles nutzt nur Python Standard Library
+
+# Optional: Für erweiterte Features (noch nicht implementiert)
+# plotly>=5.0.0  # Für Chart-Generierung
+# pandas>=1.3.0  # Für erweiterte Datenanalyse
+# numpy>=1.21.0  # Für statistische Berechnungen
+
+# Development
+# pytest>=7.0.0  # Für Tests
+# black>=22.0.0  # Für Code Formatting

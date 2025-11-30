@@ -1,0 +1,16 @@
+{
+  "obsidian_vault_path": "/Users/YOUR_USERNAME/Documents/ObsidianVault",
+  "daily_notes_path": "1. Daily Notes",
+  "health_data_path": "3. Health Data",
+  "use_previous_day": true,
+  "include_dataview_queries": true,
+
+  "baseline_metrics": {
+    "hrv": 60,
+    "resting_heart_rate": 55,
+    "target_sleep_hours": 8.0,
+    "target_steps": 10000,
+    "target_exercise_minutes": 60
+  }
+}
+
